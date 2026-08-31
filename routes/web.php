@@ -18,3 +18,8 @@ Route::get('/representantes', function () {
 Route::get('/proposicoes', function () {
     return view('proposicoes.show');
 });
+
+
+Route::get('/votacao', function () {
+    return view('votacoes.show');
+});
