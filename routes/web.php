@@ -10,3 +10,7 @@ Route::get('/perfil', function () {
     return view('representantes/perfil');
 });
 
+
+Route::get('/representantes', function () {
+    return view('representantes/representantes');
+});
