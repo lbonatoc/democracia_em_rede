@@ -6,13 +6,12 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/perfil', function () {
-    return view('representantes/perfil');
+Route::get('/representantes', function () {
+    return view('representantes.index');
 });
 
-
-Route::get('/representantes', function () {
-    return view('representantes/representantes');
+Route::get('/perfil', function () {
+    return view('representantes.show');
 });
 
 Route::get('/proposicao', function () {
