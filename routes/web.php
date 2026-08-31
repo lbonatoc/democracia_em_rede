@@ -14,3 +14,7 @@ Route::get('/perfil', function () {
 Route::get('/representantes', function () {
     return view('representantes/representantes');
 });
+
+Route::get('/proposicoes', function () {
+    return view('proposicoes.show');
+});
