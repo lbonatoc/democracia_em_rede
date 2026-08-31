@@ -27,6 +27,8 @@
 
     @include( 'partials.footer' )
 
+    @include( 'partials.aside' )
+    
     @stack( 'scripts' )
 
 </body>
