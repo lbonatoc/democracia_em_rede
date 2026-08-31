@@ -8,9 +8,9 @@
             <nav>
                 <h3>Navegação</h3>
                 <ul>
-                    <li><a href="representantes.html">Representantes</a></li>
-                    <li><a href="comparacao.html">Comparar</a></li>
-                    <li><a href="glossario.html">Glossário</a></li>
+                    <li><a href="representantes">Representantes</a></li>
+                    <li><a href="comparacao">Comparar</a></li>
+                    <li><a href="glossario">Glossário</a></li>
                 </ul>
             </nav>
             <section>
