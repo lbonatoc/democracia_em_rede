@@ -23,3 +23,8 @@ Route::get('/proposicoes', function () {
 Route::get('/votacao', function () {
     return view('votacoes.show');
 });
+
+
+Route::get('/glossario', function () {
+    return view('glossario.index');
+});
