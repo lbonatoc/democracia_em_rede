@@ -28,3 +28,7 @@ Route::get('/votacao', function () {
 Route::get('/glossario', function () {
     return view('glossario.index');
 });
+
+Route::get('/comparacao', function () {
+    return view('comparacao.index');
+});
