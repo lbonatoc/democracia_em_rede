@@ -2,32 +2,16 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::view('/', 'home')->name('home');
 
-Route::get('/representantes', function () {
-    return view('representantes.index');
-});
+Route::view('/representantes', 'representantes.index')->name('representantes.index');
 
-Route::get('/perfil', function () {
-    return view('representantes.show');
-});
+Route::view('/perfil', 'representantes.show')->name('representantes.show');
 
-Route::get('/proposicao', function () {
-    return view('proposicoes.show');
-});
+Route::view('/proposicao', 'proposicoes.show')->name('proposicoes.show');
 
+Route::view('/votacao','votacoes.show')->name('votacoes.show');
 
-Route::get('/votacao', function () {
-    return view('votacoes.show');
-});
+Route::view('/glossario', 'glossario.index')->name('glossario.index');
 
-
-Route::get('/glossario', function () {
-    return view('glossario.index');
-});
-
-Route::get('/comparacao', function () {
-    return view('comparacao.index');
-});
+Route::view('/comparacao', 'comparacao.index')->name('comparacao.index');
