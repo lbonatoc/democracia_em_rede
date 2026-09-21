@@ -133,6 +133,11 @@ h3 {
     white-space: nowrap
 }
 
+.brand:hover,
+.brand:focus-visible {
+    color: var(--yellow);
+}
+
 .logo-slot {
     width: 38px;
     height: 38px;
