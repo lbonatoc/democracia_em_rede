@@ -9,10 +9,10 @@
             </span>
         </a>
         <nav class="nav" aria-label="Navegação principal">
-            <a href="/" aria-current="page">Início</a>
-            <a href="representantes">Representantes</a>
-            <a href="comparacao">Comparar</a>
-            <a href="glossario">Glossário</a>
+            <a href="{{ route('home') }}" @if(request()->routeIs('home')) aria-current="page" @endif>Início</a>
+            <a href="{{ route('representantes.index') }}" @if(request()->routeIs('representantes.*')) aria-current="page" @endif>Representantes</a>
+            <a href="{{ route('comparacao.index') }}" @if(request()->routeIs('comparacao.*')) aria-current="page" @endif>Comparar</a>
+            <a href="{{ route('glossario.index') }}" @if(request()->routeIs('glossario.*')) aria-current="page" @endif>Glossário</a>
         </nav>
         <form class="header-search" data-search role="search">
             <label class="sr-only" for="header-q">Pesquisar representante</label>
@@ -23,10 +23,10 @@
     </div>
     <div class="mobile" id="mobile" hidden>
         <nav>
-            <a href="/" aria-current="page">Início</a>
-            <a href="representantes">Representantes</a>
-            <a href="comparacao">Comparar</a>
-            <a href="glossario">Glossário</a>
+            <a href="{{ route('home') }}" @if(request()->routeIs('home')) aria-current="page" @endif>Início</a>
+            <a href="{{ route('representantes.index') }}" @if(request()->routeIs('representantes.*')) aria-current="page" @endif>Representantes</a>
+            <a href="{{ route('comparacao.index') }}" @if(request()->routeIs('comparacao.*')) aria-current="page" @endif>Comparar</a>
+            <a href="{{ route('glossario.index') }}" @if(request()->routeIs('glossario.*')) aria-current="page" @endif>Glossário</a>
         </nav>
         <form data-search>
             <label class="sr-only" for="mobile-q">Pesquisar representante</label>
