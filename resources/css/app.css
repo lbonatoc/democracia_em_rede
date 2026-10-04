@@ -118,27 +118,31 @@ h3 {
 }
 
 .header-row {
-    min-height: 74px;
+    min-height: 78px;
     display: flex;
     align-items: center;
     gap: 1.35rem
 }
 
 .brand {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    gap: .7rem;
-    color: #fff;
+    flex-shrink: 0;
+    padding: 0;
+    color: var(--navy);
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
     text-decoration: none;
-    white-space: nowrap
 }
 
 .brand:hover,
 .brand:focus-visible {
-    color: var(--yellow);
+    color: var(--navy);
+    background: transparent;
 }
 
-.logo-slot {
+/* .logo-slot {
     width: 38px;
     height: 38px;
     display: grid;
@@ -147,6 +151,13 @@ h3 {
     border-radius: 10px;
     font-size: .58rem;
     font-weight: 900
+} */
+
+.brand-logo {
+    display: block;
+    width: 220px;
+    height: auto;
+    max-width: none;
 }
 
 .brand strong {
@@ -1456,6 +1467,21 @@ main {
 @media(max-width:680px) {
     .container {
         width: min(calc(100% - 1.2rem), var(--max))
+    }
+
+    .header-row {
+        min-height: 80px;
+    }
+
+    .brand-logo {
+        height: 56px;
+        max-width: 190px;
+    }
+
+
+    .brand {
+        padding: 0.25rem 0.4rem;
+        border-radius: 10px;
     }
 
     .brand small {
