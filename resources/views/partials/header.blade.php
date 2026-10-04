@@ -1,13 +1,22 @@
 <a class="skip" href="#app">Pular para o conteúdo</a>
 <header class="header">
     <div class="container header-row">
-        <a class="brand" href="/">
+        <a
+            class="brand"
+            href="{{ route('home') }}"
+            aria-label="Democracia em Rede — Página inicial">
+            <img
+                class="brand-logo"
+                src="{{ asset('images/logo-estendida-democracia-em-rede-negativa.svg') }}"
+                alt="Democracia em Rede">
+        </a>
+        <!-- <a class="brand" href="/">
             <span class="logo-slot" aria-hidden="true">LOGO</span>
             <span>
                 <strong>Democracia em Rede</strong>
                 <small>Dados para compreender</small>
             </span>
-        </a>
+        </a> -->
         <nav class="nav" aria-label="Navegação principal">
             <a href="{{ route('home') }}" @if(request()->routeIs('home')) aria-current="page" @endif>Início</a>
             <a href="{{ route('representantes.index') }}" @if(request()->routeIs('representantes.*')) aria-current="page" @endif>Representantes</a>
