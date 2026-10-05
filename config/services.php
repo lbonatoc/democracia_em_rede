@@ -35,4 +35,8 @@ return [
         ],
     ],
 
+    'camara' => [
+        'base_url' => env('CAMARA_API_URL'),
+    ],
+
 ];
